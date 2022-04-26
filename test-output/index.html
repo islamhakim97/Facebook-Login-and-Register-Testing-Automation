@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button class="button" id="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-Facebook_Application_Test">
+              <span class="suite-name border-failed">Facebook Application Test</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-Facebook_Application_Test">
+                    <span>testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-Facebook_Application_Test">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-Facebook_Application_Test">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-Facebook_Application_Test">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-Facebook_Application_Test">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-Facebook_Application_Test">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-Facebook_Application_Test">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">9 methods, 2 failed,   7 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Facebook_Application_Test" class="hide-methods failed suite-Facebook_Application_Test"> (hide)</a> <!-- hide-methods failed suite-Facebook_Application_Test -->
+                      <a href="#" panel-name="suite-Facebook_Application_Test" class="show-methods failed suite-Facebook_Application_Test"> (show)</a> <!-- show-methods failed suite-Facebook_Application_Test -->
+                    </span>
+                    <div class="method-list-content failed suite-Facebook_Application_Test">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Facebook_Application_Test" title="com.fb.testcases.LoginPageTest" hash-for-method="loginTest(asd123@mail.com, Tesr432!)">loginTest(asd123@mail.com, Tesr432!)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Facebook_Application_Test" title="com.fb.testcases.LoginPageTest" hash-for-method="loginTest(asd12@mail.com, Test123!@)">loginTest(asd12@mail.com, Test123!@)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Facebook_Application_Test -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Facebook_Application_Test" class="hide-methods passed suite-Facebook_Application_Test"> (hide)</a> <!-- hide-methods passed suite-Facebook_Application_Test -->
+                      <a href="#" panel-name="suite-Facebook_Application_Test" class="show-methods passed suite-Facebook_Application_Test"> (show)</a> <!-- show-methods passed suite-Facebook_Application_Test -->
+                    </span>
+                    <div class="method-list-content passed suite-Facebook_Application_Test">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Facebook_Application_Test" title="com.fb.testcases.LoginPageTest" hash-for-method="CreatePageLinkTest(public void com.fb.testcases.LoginPageTest.CreatePageLinkTest(java.lang.reflect.Method) throws java....)">CreatePageLinkTest(public void com.fb.testcases.LoginPageTest.CreatePageLinkTest(java.lang.reflect.Method) throws java....)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Facebook_Application_Test" title="com.fb.testcases.LoginPageTest" hash-for-method="ForgotPasswordLinkTest(public void com.fb.testcases.LoginPageTest.ForgotPasswordLinkTest(java.lang.reflect.Method) throws j...)">ForgotPasswordLinkTest(public void com.fb.testcases.LoginPageTest.ForgotPasswordLinkTest(java.lang.reflect.Method) throws j...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Facebook_Application_Test" title="com.fb.testcases.LoginPageTest" hash-for-method="checkFBImgTest(public void com.fb.testcases.LoginPageTest.checkFBImgTest(java.lang.reflect.Method) throws java.io.I...)">checkFBImgTest(public void com.fb.testcases.LoginPageTest.checkFBImgTest(java.lang.reflect.Method) throws java.io.I...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Facebook_Application_Test" title="com.fb.testcases.LoginPageTest" hash-for-method="checkFbintroMsgTest(public void com.fb.testcases.LoginPageTest.checkFbintroMsgTest(java.lang.reflect.Method) throws java...)">checkFbintroMsgTest(public void com.fb.testcases.LoginPageTest.checkFbintroMsgTest(java.lang.reflect.Method) throws java...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Facebook_Application_Test" title="com.fb.testcases.LoginPageTest" hash-for-method="checkURLTest(public void com.fb.testcases.LoginPageTest.checkURLTest(java.lang.reflect.Method) throws java.io.IOE...)">checkURLTest(public void com.fb.testcases.LoginPageTest.checkURLTest(java.lang.reflect.Method) throws java.io.IOE...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Facebook_Application_Test" title="com.fb.testcases.LoginPageTest" hash-for-method="loginTest(100080203316936, 695yx3meavx)">loginTest(100080203316936, 695yx3meavx)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Facebook_Application_Test" title="com.fb.testcases.LoginPageTest" hash-for-method="signUpLinkTest(public void com.fb.testcases.LoginPageTest.signUpLinkTest(java.lang.reflect.Method) throws java.io.I...)">signUpLinkTest(public void com.fb.testcases.LoginPageTest.signUpLinkTest(java.lang.reflect.Method) throws java.io.I...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Facebook_Application_Test -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Facebook_Application_Test" class="panel Facebook_Application_Test">
+          <div class="suite-Facebook_Application_Test-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.fb.testcases.LoginPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginTest(asd123@mail.com, Tesr432!)">
+                  </a> <!-- loginTest(asd123@mail.com, Tesr432!) -->
+                  <span class="method-name">loginTest</span>
+                  <span class="parameters">(asd123@mail.com, Tesr432!)</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[text()=&apos;Welcome&apos;]&quot;}
+  (Session info: chrome=100.0.4896.127)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;Islams-MacBook-Air.local&apos;, ip: &apos;fe80:0:0:0:d8:fbbd:1abe:a80d%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;12.0.1&apos;, java.version: &apos;1.8.0_331&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 100.0.4896.127, chrome: {chromedriverVersion: 100.0.4896.60 (6a5d10861ce8..., userDataDir: /var/folders/y5/3lgl8tmj2tl...}, goog:chromeOptions: {debuggerAddress: localhost:56261}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 2ecaecddbc74bc5c8da0307f1dfdaae6
+*** Element info: {Using=xpath, value=//*[text()=&apos;Welcome&apos;]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:105)
+	at com.sun.proxy.$Proxy14.findElement(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:194)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy18.getWrappedElement(Unknown Source)
+	at org.openqa.selenium.remote.internal.WebElementToJsonConverter.apply(WebElementToJsonConverter.java:50)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+	at java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:948)
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:482)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:472)
+	at java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:708)
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:499)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:484)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:105)
+	at com.sun.proxy.$Proxy14.executeScript(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.executeScript(EventFiringWebDriver.java:229)
+	at com.facebook.pages.LoginPage.testperformLogin(LoginPage.java:98)
+	at com.fb.testcases.LoginPageTest.loginTest(LoginPageTest.java:159)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+... Removed 38 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginTest(asd12@mail.com, Test123!@)">
+                  </a> <!-- loginTest(asd12@mail.com, Test123!@) -->
+                  <span class="method-name">loginTest</span>
+                  <span class="parameters">(asd12@mail.com, Test123!@)</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[text()=&apos;Welcome&apos;]&quot;}
+  (Session info: chrome=100.0.4896.127)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;Islams-MacBook-Air.local&apos;, ip: &apos;fe80:0:0:0:d8:fbbd:1abe:a80d%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;12.0.1&apos;, java.version: &apos;1.8.0_331&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 100.0.4896.127, chrome: {chromedriverVersion: 100.0.4896.60 (6a5d10861ce8..., userDataDir: /var/folders/y5/3lgl8tmj2tl...}, goog:chromeOptions: {debuggerAddress: localhost:56261}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 2ecaecddbc74bc5c8da0307f1dfdaae6
+*** Element info: {Using=xpath, value=//*[text()=&apos;Welcome&apos;]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:105)
+	at com.sun.proxy.$Proxy14.findElement(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:194)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy18.getWrappedElement(Unknown Source)
+	at org.openqa.selenium.remote.internal.WebElementToJsonConverter.apply(WebElementToJsonConverter.java:50)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+	at java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:948)
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:482)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:472)
+	at java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:708)
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:499)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:484)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:105)
+	at com.sun.proxy.$Proxy14.executeScript(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.executeScript(EventFiringWebDriver.java:229)
+	at com.facebook.pages.LoginPage.testperformLogin(LoginPage.java:98)
+	at com.fb.testcases.LoginPageTest.loginTest(LoginPageTest.java:159)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+... Removed 38 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Facebook_Application_Test-class-failed -->
+          <div class="suite-Facebook_Application_Test-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.fb.testcases.LoginPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="CreatePageLinkTest(public void com.fb.testcases.LoginPageTest.CreatePageLinkTest(java.lang.reflect.Method) throws java....)">
+                  </a> <!-- CreatePageLinkTest(public void com.fb.testcases.LoginPageTest.CreatePageLinkTest(java.lang.reflect.Method) throws java....) -->
+                  <span class="method-name">CreatePageLinkTest</span>
+                  <span class="parameters">(public void com.fb.testcases.LoginPageTest.CreatePageLinkTest(java.lang.reflect.Method) throws java.io.IOException)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="ForgotPasswordLinkTest(public void com.fb.testcases.LoginPageTest.ForgotPasswordLinkTest(java.lang.reflect.Method) throws j...)">
+                  </a> <!-- ForgotPasswordLinkTest(public void com.fb.testcases.LoginPageTest.ForgotPasswordLinkTest(java.lang.reflect.Method) throws j...) -->
+                  <span class="method-name">ForgotPasswordLinkTest</span>
+                  <span class="parameters">(public void com.fb.testcases.LoginPageTest.ForgotPasswordLinkTest(java.lang.reflect.Method) throws java.io.IOException)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkFBImgTest(public void com.fb.testcases.LoginPageTest.checkFBImgTest(java.lang.reflect.Method) throws java.io.I...)">
+                  </a> <!-- checkFBImgTest(public void com.fb.testcases.LoginPageTest.checkFBImgTest(java.lang.reflect.Method) throws java.io.I...) -->
+                  <span class="method-name">checkFBImgTest</span>
+                  <span class="parameters">(public void com.fb.testcases.LoginPageTest.checkFBImgTest(java.lang.reflect.Method) throws java.io.IOException)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkFbintroMsgTest(public void com.fb.testcases.LoginPageTest.checkFbintroMsgTest(java.lang.reflect.Method) throws java...)">
+                  </a> <!-- checkFbintroMsgTest(public void com.fb.testcases.LoginPageTest.checkFbintroMsgTest(java.lang.reflect.Method) throws java...) -->
+                  <span class="method-name">checkFbintroMsgTest</span>
+                  <span class="parameters">(public void com.fb.testcases.LoginPageTest.checkFbintroMsgTest(java.lang.reflect.Method) throws java.io.IOException)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkURLTest(public void com.fb.testcases.LoginPageTest.checkURLTest(java.lang.reflect.Method) throws java.io.IOE...)">
+                  </a> <!-- checkURLTest(public void com.fb.testcases.LoginPageTest.checkURLTest(java.lang.reflect.Method) throws java.io.IOE...) -->
+                  <span class="method-name">checkURLTest</span>
+                  <span class="parameters">(public void com.fb.testcases.LoginPageTest.checkURLTest(java.lang.reflect.Method) throws java.io.IOException)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginTest(100080203316936, 695yx3meavx)">
+                  </a> <!-- loginTest(100080203316936, 695yx3meavx) -->
+                  <span class="method-name">loginTest</span>
+                  <span class="parameters">(100080203316936, 695yx3meavx)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="signUpLinkTest(public void com.fb.testcases.LoginPageTest.signUpLinkTest(java.lang.reflect.Method) throws java.io.I...)">
+                  </a> <!-- signUpLinkTest(public void com.fb.testcases.LoginPageTest.signUpLinkTest(java.lang.reflect.Method) throws java.io.I...) -->
+                  <span class="method-name">signUpLinkTest</span>
+                  <span class="parameters">(public void com.fb.testcases.LoginPageTest.signUpLinkTest(java.lang.reflect.Method) throws java.io.IOException)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Facebook_Application_Test-class-passed -->
+        </div> <!-- panel Facebook_Application_Test -->
+        <div panel-name="test-xml-Facebook_Application_Test" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">/Users/islamabdelhakim/eclipse-workspace/FacebookApplicationTest/testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Facebook Application Test&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;End To End Test with Chrome browser&quot;&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
+    &lt;parameter name=&quot;URL&quot; value=&quot;https://www.facebook.com/&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.fb.testcases.LoginPageTest&quot;/&gt;
+      &lt;class name=&quot;com.fb.testcases.config&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- End To End Test with Chrome browser --&gt;
+&lt;/suite&gt; &lt;!-- Facebook Application Test --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Facebook_Application_Test" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Facebook Application Test</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">End To End Test with Chrome browser (2 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Facebook_Application_Test" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Facebook Application Test</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Facebook_Application_Test" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Facebook Application Test</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Facebook_Application_Test');
+function tableData_Facebook_Application_Test() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(9);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'loginTest')
+data.setCell(0, 2, 'com.fb.testcases.LoginPageTest')
+data.setCell(0, 3, 42657);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'loginTest')
+data.setCell(1, 2, 'com.fb.testcases.LoginPageTest')
+data.setCell(1, 3, 42000);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'loginTest')
+data.setCell(2, 2, 'com.fb.testcases.LoginPageTest')
+data.setCell(2, 3, 11056);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'ForgotPasswordLinkTest')
+data.setCell(3, 2, 'com.fb.testcases.LoginPageTest')
+data.setCell(3, 3, 3876);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'CreatePageLinkTest')
+data.setCell(4, 2, 'com.fb.testcases.LoginPageTest')
+data.setCell(4, 3, 2260);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'signUpLinkTest')
+data.setCell(5, 2, 'com.fb.testcases.LoginPageTest')
+data.setCell(5, 3, 715);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'checkFBImgTest')
+data.setCell(6, 2, 'com.fb.testcases.LoginPageTest')
+data.setCell(6, 3, 211);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'checkFbintroMsgTest')
+data.setCell(7, 2, 'com.fb.testcases.LoginPageTest')
+data.setCell(7, 3, 61);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'checkURLTest')
+data.setCell(8, 2, 'com.fb.testcases.LoginPageTest')
+data.setCell(8, 3, 34);
+window.suiteTableData['Facebook_Application_Test']= { tableData: data, tableDiv: 'times-div-Facebook_Application_Test'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <div id="times-div-Facebook_Application_Test">
+              </div> <!-- times-div-Facebook_Application_Test -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Facebook_Application_Test" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Facebook Application Test</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Facebook_Application_Test" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Facebook_Application_Test" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.fb.testcases.config</div> <!-- chronological-class-name -->
+              <div class="configuration-suite before">
+                <span class="method-name">start</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-suite before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.fb.testcases.LoginPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">initializeBroswer</span>
+                <span class="method-start">188 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(public void com.fb.testcases.LoginPageTest.checkURLTest(java.lang.reflect.Method) throws java.io.IOE...)</span>
+                <span class="method-start">8050 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">checkURLTest(public void com.fb.testcases.LoginPageTest.checkURLTest(java.lang.reflect.Method) throws java.io.IOE...)</span>
+                <span class="method-start">12054 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown(public void com.fb.testcases.LoginPageTest.checkURLTest(java.lang.reflect.Method) throws java.io.IOE...)</span>
+                <span class="method-start">12097 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(public void com.fb.testcases.LoginPageTest.checkFBImgTest(java.lang.reflect.Method) throws java.io.I...)</span>
+                <span class="method-start">14631 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">checkFBImgTest(public void com.fb.testcases.LoginPageTest.checkFBImgTest(java.lang.reflect.Method) throws java.io.I...)</span>
+                <span class="method-start">15343 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown(public void com.fb.testcases.LoginPageTest.checkFBImgTest(java.lang.reflect.Method) throws java.io.I...)</span>
+                <span class="method-start">15562 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(public void com.fb.testcases.LoginPageTest.checkFbintroMsgTest(java.lang.reflect.Method) throws java...)</span>
+                <span class="method-start">17982 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">checkFbintroMsgTest(public void com.fb.testcases.LoginPageTest.checkFbintroMsgTest(java.lang.reflect.Method) throws java...)</span>
+                <span class="method-start">18848 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown(public void com.fb.testcases.LoginPageTest.checkFbintroMsgTest(java.lang.reflect.Method) throws java...)</span>
+                <span class="method-start">18914 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(public void com.fb.testcases.LoginPageTest.ForgotPasswordLinkTest(java.lang.reflect.Method) throws j...)</span>
+                <span class="method-start">21345 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">ForgotPasswordLinkTest(public void com.fb.testcases.LoginPageTest.ForgotPasswordLinkTest(java.lang.reflect.Method) throws j...)</span>
+                <span class="method-start">21702 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown(public void com.fb.testcases.LoginPageTest.ForgotPasswordLinkTest(java.lang.reflect.Method) throws j...)</span>
+                <span class="method-start">25584 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(public void com.fb.testcases.LoginPageTest.CreatePageLinkTest(java.lang.reflect.Method) throws java....)</span>
+                <span class="method-start">27988 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">CreatePageLinkTest(public void com.fb.testcases.LoginPageTest.CreatePageLinkTest(java.lang.reflect.Method) throws java....)</span>
+                <span class="method-start">29061 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown(public void com.fb.testcases.LoginPageTest.CreatePageLinkTest(java.lang.reflect.Method) throws java....)</span>
+                <span class="method-start">31328 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(public void com.fb.testcases.LoginPageTest.signUpLinkTest(java.lang.reflect.Method) throws java.io.I...)</span>
+                <span class="method-start">33744 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">signUpLinkTest(public void com.fb.testcases.LoginPageTest.signUpLinkTest(java.lang.reflect.Method) throws java.io.I...)</span>
+                <span class="method-start">34213 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown(public void com.fb.testcases.LoginPageTest.signUpLinkTest(java.lang.reflect.Method) throws java.io.I...)</span>
+                <span class="method-start">34938 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(public void com.fb.testcases.LoginPageTest.loginTest(java.lang.String,java.lang.String) throws java....)</span>
+                <span class="method-start">38320 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">loginTest(100080203316936, 695yx3meavx)</span>
+                <span class="method-start">40935 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown(public void com.fb.testcases.LoginPageTest.loginTest(java.lang.String,java.lang.String) throws java....)</span>
+                <span class="method-start">52000 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(public void com.fb.testcases.LoginPageTest.loginTest(java.lang.String,java.lang.String) throws java....)</span>
+                <span class="method-start">54737 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">loginTest(asd12@mail.com, Test123!@)</span>
+                <span class="method-start">56374 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown(public void com.fb.testcases.LoginPageTest.loginTest(java.lang.String,java.lang.String) throws java....)</span>
+                <span class="method-start">98385 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(public void com.fb.testcases.LoginPageTest.loginTest(java.lang.String,java.lang.String) throws java....)</span>
+                <span class="method-start">98781 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">loginTest(asd123@mail.com, Tesr432!)</span>
+                <span class="method-start">100804 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown(public void com.fb.testcases.LoginPageTest.loginTest(java.lang.String,java.lang.String) throws java....)</span>
+                <span class="method-start">143484 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-test after">
+                <span class="method-name">endbrowser</span>
+                <span class="method-start">143969 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.fb.testcases.config</div> <!-- chronological-class-name -->
+              <div class="configuration-suite after">
+                <span class="method-name">end</span>
+                <span class="method-start">144360 ms</span>
+              </div> <!-- configuration-suite after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>

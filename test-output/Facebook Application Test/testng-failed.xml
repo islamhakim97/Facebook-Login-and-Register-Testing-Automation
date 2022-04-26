@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Facebook Application Test]">
+  <test thread-count="5" name="End To End Test with Chrome browser(failed)">
+    <parameter name="browser" value="chrome"/>
+    <parameter name="URL" value="https://www.facebook.com/"/>
+    <classes>
+      <class name="com.fb.testcases.LoginPageTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="initializeBroswer"/>
+          <include name="endbrowser"/>
+          <include name="loginTest" invocation-numbers="1 2"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.fb.testcases.LoginPageTest -->
+    </classes>
+  </test> <!-- End To End Test with Chrome browser(failed) -->
+</suite> <!-- Failed suite [Facebook Application Test] -->
